@@ -16,8 +16,8 @@ services:
     ports:
       - 8081:8081
     environment:
-      - ME_CONFIG_MONODB_ADMINUSERNAME=kodat
-      - ME_CONFIG_MONODB_ADMINUSERNAME=kodat
+      - ME_CONFIG_MONODB_ADMINUSERNAME=***
+      - ME_CONFIG_MONODB_ADMINUSERNAME=***
       - ME_CONFIG_MONODB_ADMINUSERNAME=mongodb
 volumes:
   mongo: {}
