@@ -16,7 +16,9 @@ private final ChatRoomService chatRoomService;
 
 
 public ChatMessage save(ChatMessage chatMessage) {
-    var chatId =chatRoomService.getChatRoomId(chatMessage.getSenderId(),chatMessage.getRecipientId(),true)
+    var chatId =chatRoomService.getChatRoomId(chatMessage.getSenderId(),
+                    chatMessage.getRecipientId(),
+                    true)
             .orElseThrow(); // You can create own dedicated exception
     chatMessage.setChatId(chatId);
     chatMessageRepository.save(chatMessage);

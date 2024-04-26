@@ -14,7 +14,8 @@ public class ChatRoomService {
     public Optional<String> getChatRoomId(String senderId,
                                           String recipientId,
                                           boolean createNewRomIfNotExists) {
-        return chatRoomRepository.findBySenderIdAndRecipientId(senderId,recipientId)
+        return chatRoomRepository
+                .findBySenderIdAndRecipientId(senderId,recipientId)
                 .map(ChatRoom::getId)
                 .or(() ->{
                     if (createNewRomIfNotExists){

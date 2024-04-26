@@ -1,8 +1,8 @@
 spring:
   data:
     mongodb:
-      username: ***
-      password: ***
+      username: kodat
+      password: kodat
       host: localhost
       port: 27017
       database: chat_app
